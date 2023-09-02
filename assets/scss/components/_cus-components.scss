@@ -1,0 +1,32 @@
+.accordion-tertiary {
+  &-item,&-button,&-button:not(.collapsed) {
+    background-color: transparent;
+    color: $tertiary;
+  }
+  &-button {
+    color: $tertiary;
+    padding: 32px 0 40px;
+    border-bottom: 2px dotted $light;
+    &:focus {
+      box-shadow: none;
+      border-color: $light;
+    }
+    &::after {
+      content: none;
+    }
+    .addIcon {
+      display: block;
+    }
+    .removeIcon {
+      display: none;
+    }
+    &:not(.collapsed) {
+      .addIcon {
+        display: none;
+      }
+      .removeIcon {
+        display: block;
+      }
+    }
+  }
+}

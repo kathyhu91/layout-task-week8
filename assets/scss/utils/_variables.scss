@@ -16,6 +16,7 @@ $basic-galaxy: linear-gradient($basic, $basic-dark);
 $basic-starry: radial-gradient(#280085, #000000);
 $smoke: #e9e2f3;
 $haze: #828282;
+$fog:#E9E2F3;
 
 // scss-docs-start gray-color-variables
 $white: #fff !default;
@@ -478,7 +479,9 @@ $body-text-align: null !default;
 // Style anchor elements.
 
 $link-color: $primary !default;
-$link-decoration: underline !default;
+// cus
+$link-decoration: none !default;
+// $link-decoration: underline !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;

@@ -4,6 +4,7 @@ html,
 body {
   font-family: "Noto Sans TC", sans-serif;
   color: $white;
+  overflow-x: hidden;
 }
 
 .ff {
@@ -13,16 +14,26 @@ body {
 }
 
 .link--hover {
-  &--dark:hover {
-    color: $dark;
-  }
-  &--dark:primary {
-    color: $primary;
-  }
   &--opacity:hover {
     opacity: 0.5;
   }
-}
+  &--underline {
+    position: relative;
+    &:after {
+      content: "";
+      width: 0%;
+      height: 1px;
+      background-color: $tertiary;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s linear;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+    }
+  }
 
 .icon {
     &--lg {
@@ -36,13 +47,24 @@ body {
     &--starry {
         background: $basic-starry;
     }
+    &--fog {
+      background: $fog;
+    }
 }
-// .nav {
-// &__hamburger {
-//     font-size: 44px;
-// }
-// }
+.letter-spacing {
+  &--1 {
+    letter-spacing: 4rem;
+  }
+}
 
-// @include media-breakpoint-up(lg)  {
+.border-bottom {
+  &--dotted {
+      border-bottom: 2px dotted $light;
+  }
+}
 
-// }
+.border-lg-none {
+  @include media-breakpoint-up(lg)  {
+    border: none;
+  }
+}
