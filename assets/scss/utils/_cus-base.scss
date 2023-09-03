@@ -3,7 +3,6 @@
 html,
 body {
   font-family: "Noto Sans TC", sans-serif;
-  color: $white;
   overflow-x: hidden;
 }
 
@@ -52,7 +51,7 @@ body {
     }
 }
 .letter-spacing {
-  &--1 {
+  &--4 {
     letter-spacing: 4rem;
   }
 }

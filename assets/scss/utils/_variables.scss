@@ -439,6 +439,9 @@ $spacers: (
   18: $spacer * 5,
   19: $spacer * 5.5,
   20: $spacer * 6,
+  21: $spacer * 7,
+  22: $spacer * 8,
+  23: $spacer * 9,
 ) !default;
 // $spacers: (
 //   0: 0,
@@ -686,7 +689,7 @@ $headings-margin-bottom: $spacer * 0.5 !default;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;
-$headings-line-height: 1.2 !default;
+$headings-line-height: 1.5 !default;
 $headings-color: null !default;
 // scss-docs-end headings-variables
 
@@ -910,8 +913,12 @@ $input-padding-y: $input-btn-padding-y !default;
 $input-padding-x: $input-btn-padding-x !default;
 $input-font-family: $input-btn-font-family !default;
 $input-font-size: $input-btn-font-size !default;
-$input-font-weight: $font-weight-base !default;
-$input-line-height: $input-btn-line-height !default;
+// cus
+$input-font-weight: 700 !default;
+$input-line-height: $line-height-base !default;
+
+// $input-font-weight: $font-weight-base !default;
+// $input-line-height: $input-btn-line-height !default;
 
 $input-padding-y-sm: $input-btn-padding-y-sm !default;
 $input-padding-x-sm: $input-btn-padding-x-sm !default;
@@ -926,7 +933,9 @@ $input-disabled-color: null !default;
 $input-disabled-bg: $gray-200 !default;
 $input-disabled-border-color: null !default;
 
-$input-color: $body-color !default;
+// cus
+$input-color: $tertiary !default;
+// $input-color: $body-color !default;
 $input-border-color: $gray-400 !default;
 $input-border-width: $input-btn-border-width !default;
 $input-box-shadow: $box-shadow-inset !default;
@@ -941,7 +950,9 @@ $input-focus-color: $input-color !default;
 $input-focus-width: $input-btn-focus-width !default;
 $input-focus-box-shadow: $input-btn-focus-box-shadow !default;
 
-$input-placeholder-color: $gray-600 !default;
+// cus
+$input-placeholder-color: $tertiary !default;
+// $input-placeholder-color: $gray-600 !default;
 $input-plaintext-color: $body-color !default;
 
 $input-height-border: $input-border-width * 2 !default;
@@ -1115,9 +1126,13 @@ $form-file-button-hover-bg: shade-color($form-file-button-bg, 5%) !default;
 
 // scss-docs-start form-floating-variables
 $form-floating-height: add(3.5rem, $input-height-border) !default;
-$form-floating-line-height: 1.25 !default;
-$form-floating-padding-x: $input-padding-x !default;
-$form-floating-padding-y: 1rem !default;
+// cus
+$form-floating-line-height: $line-height-base !default;
+$form-floating-padding-x: 1rem !default;
+$form-floating-padding-y: 0.5rem !default;
+// $form-floating-line-height: 1.25 !default;
+// $form-floating-padding-x: $input-padding-x !default;
+// $form-floating-padding-y: 1rem !default;
 $form-floating-input-padding-t: 1.625rem !default;
 $form-floating-input-padding-b: 0.625rem !default;
 $form-floating-label-opacity: 0.65 !default;

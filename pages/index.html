@@ -12,9 +12,45 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <div class="container">
-      <h1 class="h1">我是首頁</h1>
-    </div>
+    <main>
+      <!-- contact form -->
+      <div class="bg-tertiary py-23">
+       <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-5 text-light d-flex flex-column mb-6 mb-lg-0">
+            <h3 class="h3 fw-bold letter-spacing--4  mb-3 mb-lg-5">聯絡我們</h3>
+            <div class="mb-9 mb-lg-15 d-inline-flex">
+              <div
+                class="rounded-circle bg-light me-2"
+                style="width: 12px; height: 12px"
+              ></div>
+              <div
+                class="rounded-pill bg-light"
+                style="width: 124px; height: 12px"
+              ></div>
+            </div>
+            <p class="fw-bold">
+              讓科技成為您的最佳夥伴<br />立即體驗神奇功能並享限時優惠！
+            </p>
+          </div>
+          <div class="col-12 col-lg-7 d-flex flex-column">
+            <div class="mb-4">
+              <span class="material-symbols-outlined icon--lg text-light"> emergency </span>
+            </div>
+            <form >
+              <div class="form-floating mb-4">
+                <input type="email" class="form-control fs-5 rounded-0" id="email" placeholder="EMAIL">
+                <label for="email" class="mb-2">EMAIL</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control fs-5 rounded-0" placeholder="COMMENTS" id="mes" style="height: 120px"></textarea>
+                <label for="mes" class="mb-2">Comments</label>
+              </div>
+            </form>
+          </div>
+        </div>
+       </div>
+    </main>
 
     <%- include('./layout/footer'); -%>
 
