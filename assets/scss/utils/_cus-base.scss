@@ -1,14 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Saira+Extra+Condensed:wght@300;400&family=Shrikhand&display=swap");
 
 html,
 body {
   font-family: "Noto Sans TC", sans-serif;
   overflow-x: hidden;
 }
+a {
+  display: block;
+  text-decoration: none;
+}
 
 .ff {
   &--particular {
     font-family: "Shrikhand", cursive, sans-serif;
+  }
+  &--unusual {
+    font-family: "Saira Extra Condensed", sans-serif;
   }
 }
 
@@ -31,24 +38,24 @@ body {
     &:hover::after {
       width: 100%;
     }
-    }
   }
+}
 
 .icon {
-    &--lg {
-       font-size: 80px;
-    }
+  &--lg {
+    font-size: 80px;
+  }
 }
 .bg {
-    &--galaxy {
-        background: $basic-galaxy;
-    }
-    &--starry {
-        background: $basic-starry;
-    }
-    &--fog {
-      background: $fog;
-    }
+  &--galaxy {
+    background: $basic-galaxy;
+  }
+  &--starry {
+    background: $basic-starry;
+  }
+  &--fog {
+    background: $fog;
+  }
 }
 .letter-spacing {
   &--4 {
@@ -58,12 +65,34 @@ body {
 
 .border-bottom {
   &--dotted {
-      border-bottom: 2px dotted $light;
+    border-bottom: 2px dotted $light;
   }
 }
 
 .border-lg-none {
-  @include media-breakpoint-up(lg)  {
+  @include media-breakpoint-up(lg) {
     border: none;
+  }
+}
+
+.fz {
+  &--24 {
+    font-size: 24px;
+  }
+  &--128 {
+    font-size: 128px;
+    line-height: 1.5;
+  }
+  &--lg--400 {
+    @include media-breakpoint-up(lg) {
+      font-size: 400px;
+    line-height: 1.5;
+    }
+  }
+  &--lg--32 {
+    @include media-breakpoint-up(lg) {
+      font-size: 32px;
+    line-height: 1.5;
+    }
   }
 }

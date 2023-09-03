@@ -30,3 +30,16 @@
     }
   }
 }
+
+.card {
+  &__bg--cus {
+    background-color: $black;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+    &:hover {
+      background-color: rgb(0, 0, 0, 0.5);
+    }
+  }
+}
