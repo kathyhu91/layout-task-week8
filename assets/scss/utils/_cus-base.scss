@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
 }
 a {
+  cursor: pointer;
   display: block;
   text-decoration: none;
 }
@@ -21,6 +22,7 @@ a {
 
 .link--hover {
   &--opacity:hover {
+    cursor: pointer;
     opacity: 0.5;
   }
   &--underline {
@@ -46,6 +48,18 @@ a {
     font-size: 80px;
   }
 }
+.img {
+  &--sm {
+    max-width: 86px;
+  }
+  &--base {
+max-width: 196px;
+  }
+  &--circle {
+    width: 132px;
+    height: 132px;
+  }
+}
 .bg {
   &--galaxy {
     background: $basic-galaxy;
@@ -53,13 +67,29 @@ a {
   &--starry {
     background: $basic-starry;
   }
+  &--nebula {
+    background: $basic-nebula;
+  }
   &--fog {
     background: $fog;
   }
 }
 .letter-spacing {
+  &--1 {
+    letter-spacing: 1rem;
+  }
+  &--2{
+    letter-spacing: 2rem;
+  }
   &--4 {
     letter-spacing: 4rem;
+  }
+}
+.text-indent {
+  &--downLg--4 {
+    @include media-breakpoint-down(lg) {
+      text-indent: 4rem;
+    }
   }
 }
 
@@ -101,5 +131,12 @@ a {
 .mt--lg--136 {
   @include media-breakpoint-up(lg) {
     margin-top: 136px;
+  }
+}
+
+
+.pt--lg--76 {
+  @include media-breakpoint-up(lg) {
+    padding-top: 76px;
   }
 }
