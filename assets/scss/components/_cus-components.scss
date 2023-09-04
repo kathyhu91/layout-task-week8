@@ -42,4 +42,26 @@
       background-color: rgb(0, 0, 0, 0.5);
     }
   }
+  &--size--cus {
+    height: 100%;
+    min-height: 352px;
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+      max-height: 416px;
+    }
+  }
+}
+
+
+.swiper {
+  overflow: initial;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #FFF;
+}
+
+.swiper-scrollbar {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 4px;
 }
