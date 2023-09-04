@@ -14,6 +14,119 @@
   <body>
     <%- include('./layout/header'); -%>
     <main>
+      <!-- banner -->
+      <div class="bg--cusImg pt-8 pb-15 pt-lg-23 pb-lg-13">
+        <div class="container-fluid px-xxl-18">
+          <div
+            class="w-100 bg--galaxy--s mb-4 mb-lg-2"
+            style="height: 40px"
+          ></div>
+          <h3
+            class="h3 text-light fw-bold letter-spacing--2 pb-5 pb-lg-4 border-bottom border-light mb-4 mb-lg-8"
+          >
+            什麼是<br />ALPHABOX+
+          </h3>
+        </div>
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-between g-0">
+            <div class="col-1 d-none d-md-block">
+              <div class="swiper-button-prev">
+                <img
+                  src="../assets/images/arrow_right.png"
+                  alt="arrow-left "
+                  class="img-fluid"
+                  style="rotate: 180deg"
+                />
+              </div>
+            </div>
+            <!-- swiper content -->
+            <div class="col-md-9 mt-3">
+              <!-- swiper box  -->
+              <div class="swiperNavWrap">
+                <div class="swiper position--initial" id="swiperNavigation">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div
+                        class="swiperNavigaionBox d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center p-4 pe-lg-10 bg--center bg--cover bg--norepeat"
+                        style="
+                          background-image: url('../assets/images/carousel.png');
+                        "
+                      >
+                        <div class="text-light text-md-end">
+                          <h3 class="lh-base mb-3">
+                            <span class="ff--particular fs-1">01</span><br />
+                            <span
+                              class="letter-spacing--2 text-indent--downLg--2"
+                              >立體投影技術</span
+                            >
+                          </h3>
+                          <p class="mb-0">
+                            透過高科技立體投影技術，讓您感受真實的科技世界。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="swiperNavigaionBox d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center p-4 pe-lg-10 bg--center bg--cover bg--norepeat"
+                        style="
+                          background-image: url('../assets/images/carousel.png');
+                        "
+                      >
+                        <div class="text-light text-md-end">
+                          <h3 class="lh-base mb-3">
+                            <span class="ff--particular fs-1">01</span><br />
+                            <span
+                              class="letter-spacing--2 text-indent--downLg--2"
+                              >立體投影技術</span
+                            >
+                          </h3>
+                          <p class="mb-0">
+                            透過高科技立體投影技術，讓您感受真實的科技世界。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="swiperNavigaionBox d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center p-4 pe-lg-10 bg--center bg--cover bg--norepeat"
+                        style="
+                          background-image: url('../assets/images/carousel.png');
+                        "
+                      >
+                        <div class="text-light text-md-end">
+                          <h3 class="lh-base mb-3">
+                            <span class="ff--particular fs-1">01</span><br />
+                            <span
+                              class="letter-spacing--2 text-indent--downLg--2"
+                              >立體投影技術</span
+                            >
+                          </h3>
+                          <p class="mb-0">
+                            透過高科技立體投影技術，讓您感受真實的科技世界。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1 d-none d-md-block">
+              <div class="swiper-button-next">
+                <img
+                  src="../assets/images/arrow_right.png"
+                  alt="arrow-left "
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="w-100 bg--galaxy--e mt-8" style="height: 40px"></div>
+        </div>
+      </div>
       <!-- news -->
       <div class="bg--nebula text-light fw-bold pt-15 pb-18 pt-lg-24 pb-lg-10">
         <div class="container">
@@ -44,10 +157,10 @@
               />
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 col-lg-6 pe-lg-0">
+          <div class="row g-0">
+            <div class="col-12 col-lg-6">
               <div
-                class="py-8 py-lg-10 pe-lg-3 border-bottom border-lg-end border-light"
+                class="py-8 py-lg-10 pe-lg-3 border-bottom border--lg--end border-light h-100"
               >
                 <div class="d-flex align-items-start">
                   <span class="material-symbols-outlined me-4">
@@ -70,8 +183,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-6 ps-lg-0">
-              <div class="py-8 py-lg-10 ps-lg-3 border-bottom border-light">
+            <div class="col-12 col-lg-6">
+              <div
+                class="py-8 py-lg-10 h-100 ps-lg-3 border-bottom border-light"
+              >
                 <div class="d-flex align-items-start">
                   <span class="material-symbols-outlined me-4">
                     emergency
@@ -136,7 +251,7 @@
             </span>
           </div>
           <!-- Slider main container -->
-          <div class="swiper">
+          <div class="swiper" id="swiperScroll">
             <!-- Additional required wrapper -->
             <ul
               class="swiper-wrapper list-unstyled d-flex flex-wrap flex-lg-nowrap"
@@ -350,7 +465,7 @@
               href="#"
               class="card border-0 rounded-0 py-6 px-3 pb-lg-14 px-lg-10 card__bg--cus"
               style="
-                background-image: url('../assets/images/role/diane_vertical.png');
+                background-image: url('../assets/images/role/vertical/vertical/diane_vertical.png');
               "
             >
               <h4
@@ -382,7 +497,7 @@
               href="#"
               class="card border-0 rounded-0 py-6 px-3 pb-lg-14 px-lg-10 card__bg--cus"
               style="
-                background-image: url('../assets/images/role/felix_vertical.png');
+                background-image: url('../assets/images/role/vertical/felix_vertical.png');
               "
             >
               <h4
@@ -414,7 +529,7 @@
               href="#"
               class="card border-0 rounded-0 py-6 px-3 pb-lg-14 px-lg-10 card__bg--cus"
               style="
-                background-image: url('../assets/images/role/karina_verticalgle.png');
+                background-image: url('../assets/images/role/vertical/karina_verticalgle.png');
               "
             >
               <h4
@@ -446,7 +561,7 @@
               href="#"
               class="card border-0 rounded-0 py-6 px-3 pb-lg-14 px-lg-10 card__bg--cus"
               style="
-                background-image: url('../assets/images/role/vito_square2.png');
+                background-image: url('../assets/images/role/vertical/vito_square2.png');
               "
             >
               <h4

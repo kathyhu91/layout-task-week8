@@ -6,10 +6,10 @@ import { Scrollbar } from "swiper/modules";
 // import styles bundle
 import "swiper/css/bundle";
 // init Swiper:
-const swiper = new Swiper(".swiper", {
+const swiperScroll = new Swiper("#swiperScroll", {
   loop: false,
   direction: "vertical",
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   noSwiping: true,
   breakpoints: {
     992: {
@@ -23,5 +23,24 @@ const swiper = new Swiper(".swiper", {
       },
       mousewheel: true,
     },
+  },
+});
+
+const swiperNavigation = new Swiper("#swiperNavigation", {
+  slidesPerView: 1,
+  spaceBetween: 64,
+  autoplay: {
+    delay: 2000,
+  },
+  breakpoints: {
+    768: {
+      autoplay: {
+        enabled: false,
+      },
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
