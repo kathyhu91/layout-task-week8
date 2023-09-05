@@ -18,6 +18,7 @@ img {
 button {
   cursor: pointer;
 }
+
 .ff {
   &--particular {
     font-family: "Shrikhand", cursive, sans-serif;
@@ -47,6 +48,11 @@ button {
     &:hover::after {
       width: 100%;
     }
+  }
+  &--shadow:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 16px 8px #8f00ffcc;
+    opacity: 80%;
   }
 }
 
@@ -87,13 +93,14 @@ button {
     background: $fog;
   }
   &--cusImg {
-    background-image: url('../images/carousel_background.png'),radial-gradient(rgba(48, 8, 113, 1), rgba(0, 0, 0, 1)),;
+    background-image: url("../images/carousel_background.png"),
+      radial-gradient(rgba(48, 8, 113, 1), rgba(0, 0, 0, 1));
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     @include media-breakpoint-up(lg) {
       background-size: contain;
-      background-position: left
+      background-position: left;
     }
   }
   &--center {
@@ -102,43 +109,8 @@ button {
   &--cover {
     background-size: cover;
   }
-  &--norepeat{
+  &--norepeat {
     background-repeat: no-repeat;
-  }
-}
-.letter-spacing {
-  &--1 {
-    letter-spacing: 1rem;
-  }
-  &--2 {
-    letter-spacing: 2rem;
-  }
-  &--4 {
-    letter-spacing: 4rem;
-  }
-}
-.text-indent {
-  &--downLg--2 {
-    @include media-breakpoint-down(lg) {
-      text-indent: 2rem;
-    }
-  }
-  &--downLg--4 {
-    @include media-breakpoint-down(lg) {
-      text-indent: 4rem;
-    }
-  }
-}
-
-.border-bottom {
-  &--dotted {
-    border-bottom: 2px dotted $light;
-  }
-}
-
-.border-lg-none {
-  @include media-breakpoint-up(lg) {
-    border: none;
   }
 }
 
@@ -164,33 +136,94 @@ button {
   }
 }
 
+.text--iris {
+  color: #ad93cf;
+}
+
 .mt--lg--136 {
+  
   @include media-breakpoint-up(lg) {
     margin-top: 136px;
   }
 }
 
-.pt--lg--76 {
+.mt--negative--position {
+  margin-top: -104px;
   @include media-breakpoint-up(lg) {
-    padding-top: 76px;
+    margin-top: -114px;
   }
 }
-.pb--lg--500 {
-  @include media-breakpoint-up(lg) {
-    padding-top: 500px;
+.p {
+  &t--136 {
+    padding-top: 136px;
+  }
+  &b--287 {
+    padding-bottom: 287px;
+  }
+  &b--md--516{
+    padding-bottom: 516px;
+  }
+  &b--md--612 {
+    padding-bottom: 612px;
+  }
+  &t--lg--76 {
+    @include media-breakpoint-up(lg) {
+      padding-top: 76px;
+    }
+  }
+  &t--lg--156 {
+    padding-top: 156px;
+  }
+  &b--lg--500 {
+    @include media-breakpoint-up(lg) {
+      padding-top: 500px;
+    }
+  }
+  
+}
+
+
+.letter-spacing {
+  &--2 {
+    letter-spacing: 2rem;
+  }
+  &--4 {
+    letter-spacing: 4rem;
   }
 }
-.pb--1380 {
-padding-bottom: 1380px;
-}
-.border--lg--end {
-  @include media-breakpoint-up(lg) {
-    border-right: 1px solid $light;
+.text-indent {
+  &--4 {
+    text-indent: 4rem;
+  }
+  &--downLg--2 {
+    @include media-breakpoint-down(lg) {
+      text-indent: 2rem;
+    }
+  }
+  &--downLg--4 {
+    @include media-breakpoint-down(lg) {
+      text-indent: 4rem;
+    }
   }
 }
 
-.text--iris {
-  color: #AD93CF;
+.border-bottom {
+  &--dotted {
+    border-bottom: 2px dotted $light;
+  }
+}
+
+.border--lg {
+  &--none {
+    @include media-breakpoint-up(lg) {
+      border: none;
+    }
+  }
+  &--end {
+    @include media-breakpoint-up(lg) {
+      border-right: 1px solid $light;
+    }
+  }
 }
 
 .h--lg--196 {

@@ -17,13 +17,14 @@ const swiperScroll = new Swiper("#swiperScroll", {
       noSwiping: false,
       slidesPerView: 3,
       spaceBetween: 24,
-      scrollbar: {
-        el: ".swiper-scrollbar",
-        draggable: true,
-      },
-      mousewheel: true,
+      
     },
   },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+  mousewheel: true,
 });
 
 const swiperNavigation = new Swiper("#swiperNavigation", {

@@ -98,3 +98,16 @@
     rotate: 360deg;
   }
 }
+
+.role-card {
+  &--square {
+    width: 100%;
+    min-height: 351px;
+    min-width: 351px;
+  }
+  &--lg--rectangle {
+    @include media-breakpoint-up(lg) {
+      max-height: 676px;
+    }
+  }
+}
