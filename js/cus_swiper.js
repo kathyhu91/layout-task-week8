@@ -28,15 +28,16 @@ const swiperScroll = new Swiper("#swiperScroll", {
 
 const swiperNavigation = new Swiper("#swiperNavigation", {
   slidesPerView: 1,
-  spaceBetween: 64,
-  autoplay: {
-    delay: 2000,
-  },
+  spaceBetween: 80,
+  autoplay: 
+    {
+      enabled: true,
+      delay: 1000,
+    },
   breakpoints: {
     768: {
-      autoplay: {
-        enabled: false,
-      },
+      spaceBetween: 320,
+      autoplay: { enabled: false }
     },
   },
   navigation: {
