@@ -56,31 +56,59 @@
 
 .swiper {
   overflow: initial;
-  &--NavigaionBox {
-    height: 351px;
-    @include media-breakpoint-up(md) {
-      height: 560px;
-    }
-  }
-  &-scrollbar-drag {
-    background-color: #fff;
-  }
-  &-scrollbar {
-    background-color: rgba(255, 255, 255, 0.2);
-    height: 4px;
-  }
-  &-button-next,
-  &-button-prev {
-    color: #fff;
-    position: initial;
-    margin-top: 0;
-    width: auto;
-    height: auto;
-    &::after {
-      content: "";
-    }
+}
+.swiper-scrollbar-drag {
+  background-color: #FFF;
+}
+.swiper-scrollbar {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 4px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #fff;
+  position: initial;
+  margin-top: 0;
+  width: auto;
+  height: auto;
+  &::after {
+    content: '';
   }
 }
+.swiper--NavigaionBox {
+  height: 351px;
+  @include media-breakpoint-up(md) {
+    height: 560px;
+  }
+}
+
+// .swiper {
+//   overflow: initial;
+//   &--NavigaionBox {
+//     height: 351px;
+//     @include media-breakpoint-up(md) {
+//       height: 560px;
+//     }
+//   }
+//   &-scrollbar-drag {
+//     background-color: #fff;
+//   }
+//   &-scrollbar {
+//     background-color: rgba(255, 255, 255, 0.2);
+//     height: 4px;
+//   }
+//   &-button-next,
+//   &-button-prev {
+//     color: #fff;
+//     position: initial;
+//     margin-top: 0;
+//     width: auto;
+//     height: auto;
+//     &::after {
+//       content: "";
+//     }
+//   }
+// }
 
 .logo--animation {
   animation-name: logo-rotate;
