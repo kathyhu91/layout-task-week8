@@ -1,5 +1,7 @@
 .accordion-tertiary {
-  &-item,&-button,&-button:not(.collapsed) {
+  &-item,
+  &-button,
+  &-button:not(.collapsed) {
     background-color: transparent;
     color: $tertiary;
   }
@@ -52,33 +54,47 @@
   }
 }
 
-
 .swiper {
   overflow: initial;
-}
-
-.swiper-scrollbar-drag {
-  background-color: #FFF;
-}
-
-.swiper-scrollbar {
-  background-color: rgba(255, 255, 255, 0.2);
-  height: 4px;
-}
-
-.swiper-button-next, .swiper-button-prev {
-  color: #fff;
-  position: initial;
-  margin-top: 0;
-  width: auto;
-  height: auto;
-  &::after {
-    content: '';
+  &--NavigaionBox {
+    height: 351px;
+    @include media-breakpoint-up(md) {
+      height: 560px;
+    }
+  }
+  &-scrollbar-drag {
+    background-color: #fff;
+  }
+  &-scrollbar {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 4px;
+  }
+  &-button-next,
+  &-button-prev {
+    color: #fff;
+    position: initial;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    &::after {
+      content: "";
+    }
   }
 }
-.swiperNavigaionBox {
-  height: 351px;
-  @include media-breakpoint-up(md) {
-    height: 560px;
-    }
+
+.logo--animation {
+  animation-name: logo-rotate;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes logo-rotate {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }

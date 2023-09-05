@@ -11,6 +11,13 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
 .ff {
   &--particular {
     font-family: "Shrikhand", cursive, sans-serif;
@@ -168,16 +175,26 @@ a {
     padding-top: 76px;
   }
 }
+.pb--lg--500 {
+  @include media-breakpoint-up(lg) {
+    padding-top: 500px;
+  }
+}
+.pb--1380 {
+padding-bottom: 1380px;
+}
 .border--lg--end {
   @include media-breakpoint-up(lg) {
     border-right: 1px solid $light;
   }
 }
-.position--initial {
-  position: initial;
-}
-.swiperNavWrap {
-  position: relative;
-  padding: 0px 50px;
+
+.text--iris {
+  color: #AD93CF;
 }
 
+.h--lg--196 {
+  @include media-breakpoint-up(lg) {
+    height: 196px;
+  }
+}
