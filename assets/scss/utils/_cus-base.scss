@@ -160,11 +160,16 @@ button {
   &b--287 {
     padding-bottom: 287px;
   }
-  &b--md--516{
-    padding-bottom: 516px;
+  &b--lg--516{
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 516px;
+    }
   }
-  &b--md--612 {
-    padding-bottom: 612px;
+  &b--lg--612 {
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 612px;
+    }
+    
   }
   &t--lg--76 {
     @include media-breakpoint-up(lg) {

@@ -29,7 +29,6 @@ const swiperScroll = new Swiper("#swiperScroll", {
 
 const swiperNavigation = new Swiper("#swiperNavigation", {
   slidesPerView: 1,
-  spaceBetween: 80,
   autoplay: 
     {
       enabled: true,
@@ -37,7 +36,6 @@ const swiperNavigation = new Swiper("#swiperNavigation", {
     },
   breakpoints: {
     768: {
-      spaceBetween: 320,
       autoplay: { enabled: false }
     },
   },
